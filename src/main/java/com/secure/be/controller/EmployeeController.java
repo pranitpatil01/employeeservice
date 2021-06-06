@@ -24,5 +24,13 @@ public class EmployeeController {
 			return "Hey Hello "+name;
 
 	}
+	
+	@ApiOperation(value = "Api to get helloword")
+	@RequestMapping(value = "/world", method = RequestMethod.GET)
+	@ResponseBody
+	public String addStudent(HttpServletResponse response) throws IOException {
+			return "Hey Hello world";
+
+	}
 
 }
